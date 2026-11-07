@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#09070b">
+<title>Ashley ❤️ Jeanelle | Season 1 Episode 4</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="petals-container" aria-hidden="true"></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<audio id="bgMusic" loop preload="auto"><source src="assets/music/music.mp3" type="audio/mpeg"></audio>
+<button id="musicToggle" class="music-btn" aria-label="Play music">🔇</button>
+<nav id="dots" class="dots" aria-label="Scenes"></nav>
+
+<!-- 1 INTRO -->
+<section id="introScene" class="scene active">
+  <div class="stack center">
+    <div class="n-logo">N</div>
+    <p class="tracking">A NETFLIX LOVE STORY</p>
+    <div class="line"></div>
+    <p class="tracking dim">PRESENTED BY</p>
+    <h2 class="names">Ashley Reyes <span>❤️</span> Jeanelle Batalla</h2>
+    <p class="tracking rose">SEASON 1 • EPISODE 4</p>
+    <h1 class="title">FOUR MONTHS,<br>ONE LOVE</h1>
+    <button class="btn" data-next>Begin Episode ❤️</button>
+  </div>
+</section>
+
+<!-- 3 HERO + TIMER -->
+<section id="heroScene" class="scene hero">
+  <img class="hero-bg" src="assets/images/cover.jpg" alt="" onerror="this.remove()">
+  <div class="hero-overlay"></div>
+  <div class="stack center">
+    <span class="badge">SEASON 1 • EPISODE 4</span>
+    <h1 class="title">FOUR MONTHS,<br>ONE LOVE</h1>
+    <p class="dim" id="dateRange"></p>
+    <div class="glass timer-box">
+      <span class="tracking dim">TOGETHER FOR</span>
+      <div id="relationshipTimer" class="timer"></div>
+      <p id="monthsaryBanner" class="banner" hidden></p>
+    </div>
+    <button class="btn" data-next>Continue ❤️</button>
+  </div>
+</section>
+
+<!-- 4 TIMELINE -->
+<section id="timelineScene" class="scene">
+  <div class="stack wide">
+    <p class="tracking rose">THE STORY SO FAR</p>
+    <h2 class="scene-title">Four Chapters, One Heart</h2>
+    <ol id="timeline" class="timeline"></ol>
+    <div class="glass countdown">
+      <span class="tracking dim">COUNTDOWN TO OUR NEXT MONTHSARY</span>
+      <div id="monthsaryCountdown" class="timer small"></div>
+    </div>
+    <button class="btn" data-next>Why I Love You 💌</button>
+  </div>
+</section>
+
+<!-- 5 REASONS -->
+<section id="reasonsScene" class="scene">
+  <div class="stack wide center">
+    <p class="tracking rose">TAP EACH CARD</p>
+    <h2 class="scene-title">Reasons I Choose You</h2>
+    <p class="dim"><b id="flipCount">0</b> of <b id="flipTotal">0</b> discovered</p>
+    <div id="reasons" class="reasons"></div>
+    <p id="reasonsDone" class="banner" hidden>…and a thousand more I haven't said yet. ❤️</p>
+    <button class="btn" data-next>See Our Memories 📸</button>
+  </div>
+</section>
+
+<!-- 6 MEMORIES -->
+<section id="memoriesScene" class="scene">
+  <div class="stack wide">
+    <p class="tracking rose">OUR FAVORITE MOMENTS</p>
+    <h2 class="scene-title">Memories From Our Fourth Month 📸</h2>
+    <div id="gallery" class="gallery"></div>
+    <h3 class="sub">Our Little Moments 🎥</h3>
+    <div id="videos" class="video-grid"></div>
+    <button class="btn" data-next>Read My Letter 💌</button>
+  </div>
+</section>
+
+<!-- 7 LETTER -->
+<section id="letterScene" class="scene">
+  <div class="stack letter">
+    <p class="tracking rose">A LITTLE MESSAGE FOR YOU</p>
+    <h2 class="scene-title" id="letterTitle"></h2>
+    <div id="letterBody" class="letter-body" aria-live="polite"></div>
+    <div class="row">
+      <button id="skipType" class="btn ghost">Show all</button>
+      <button id="letterNext" class="btn" data-next hidden>Final Scene ❤️</button>
+    </div>
+  </div>
+</section>
+
+<!-- 8 FINALE -->
+<section id="finaleScene" class="scene">
+  <div class="stack center">
+    <div class="n-logo">N</div>
+    <p class="tracking dim">SEASON 1 • EPISODE 4</p>
+    <h1 class="title">FOUR MONTHS,<br>ONE LOVE</h1>
+    <p class="dim" id="episodeDate"></p>
+    <div class="line"></div>
+    <p class="tracking rose">OUR STORY CONTINUES… ❤️</p>
+    <div class="glass next-ep">
+      <span class="tracking dim">COMING NEXT</span>
+      <strong id="nextEp"></strong>
+    </div>
+    <button class="btn" id="burstBtn">Send Love 💗</button>
+    <button class="btn ghost" data-goto="0">Watch Again ↻</button>
+  </div>
+</section>
+
+<script src="js/config.js"></script>
+<script src="js/music.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/petals.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

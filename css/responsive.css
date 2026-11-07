@@ -1,0 +1,17 @@
+/* SEASON 1 • EPISODE 4 — RESPONSIVE */
+@media (max-width:820px){
+  .timeline{grid-template-columns:1fr 1fr}
+  .reasons{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .scene{padding:60px 16px 84px}
+  .timeline{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+  .unit{min-width:54px}.timer-row{gap:6px}
+  .reason{height:118px}.face{font-size:13px}
+  .vbtn.prev{left:6px}.vbtn.next{right:6px}
+  .glass{padding:16px}
+}
+@media (max-height:520px) and (orientation:landscape){
+  .n-logo{font-size:56px}.scene{padding-top:24px}
+}
